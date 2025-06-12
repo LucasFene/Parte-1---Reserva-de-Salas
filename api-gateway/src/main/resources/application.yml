@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: usuario
+          uri: http://usuario:8082
+          predicates:
+            - Path=/usuarios/**
+        - id: sala
+          uri: http://sala:8083
+          predicates:
+            - Path=/salas/**
+        - id: reserva
+          uri: http://reserva:8084
+          predicates:
+            - Path=/reservas/**

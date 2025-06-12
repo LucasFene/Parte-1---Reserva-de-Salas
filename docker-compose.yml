@@ -149,29 +149,3 @@ networks:
     driver: bridge
   netApiGateway:
     driver: bridge
-
-# Teste estes endereços no navegador ou Postman:
-
-# - RabbitMQ Management: http://localhost:15672
-#   (Usuário: guest, Senha: guest)
-
-# - Serviço usuario (Spring Boot): http://localhost:8083
-# - Banco de dados usuario (Postgres): localhost:5433
-#   (acessível via Adminer)
-
-# - Serviço reserva (Spring Boot): http://localhost:8084
-# - Banco de dados reserva (Postgres): localhost:5434
-#   (acessível via Adminer)
-
-# - Serviço sala (Spring Boot): http://localhost:8085
-# - Banco de dados sala (Postgres): localhost:5435
-#   (acessível via Adminer)
-
-# - Adminer (gerenciador de banco): http://localhost:8089
-
-# - Frontend (Nginx): http://localhost:3000
-
-# Se abrir cada um desses endereços e aparecer a tela do serviço correspondente, está funcionando!
-# Para os serviços Spring Boot, normalmente aparece "Whitelabel Error Page" ou uma mensagem padrão se não houver rota configurada.
-# Para o RabbitMQ e Adminer, aparecerá a interface web de administração.
-# Para o frontend, aparecerá sua aplicação web.
